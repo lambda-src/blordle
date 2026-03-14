@@ -37,7 +37,7 @@
 ; Returns a list of the colors of a given word
 (define (get-colors guess word)
     (for/list ([g-char (in-string guess)]
-          [w-char (in-string word) ])
+               [w-char (in-string word) ])
         (cond 
             ; The 'x are atoms which are constants who's value equals their name 
             [(char=? g-char w-char) 'green]
